@@ -9,12 +9,25 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  <servlet-mapping>
-    <servlet-name>s1</servlet-name>
-    <url-pattern>/class</url-pattern>
-  </servlet-mapping>
+  
+<servlet-mapping>
+	<servlet-name>first</servlet-name>
+	<url-pattern>/callp1</url-pattern>
+</servlet-mapping>
+  
   <servlet>
-    <servlet-name>s1</servlet-name>
-    <servlet-class>com.project2.Application</servlet-class>
+  	<servlet-name>first</servlet-name>
+  	<servlet-class>com.project.Page1</servlet-class>
   </servlet>
+  
+  <servlet-mapping>
+	<servlet-name>second</servlet-name>
+	<url-pattern>/callp2</url-pattern>
+</servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>second</servlet-name>
+  	<servlet-class>com.project.Page2</servlet-class>
+  </servlet>
+  
 </web-app>

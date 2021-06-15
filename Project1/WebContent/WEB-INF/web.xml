@@ -15,6 +15,15 @@
   </servlet-mapping>
   <servlet>
     <servlet-name>s1</servlet-name>
-    <servlet-class>Application</servlet-class>
+    <servlet-class>com.project.Application</servlet-class>
   </servlet>
+   <servlet-mapping>
+    <servlet-name>s2</servlet-name>
+    <url-pattern>/call2</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>s2</servlet-name>
+    <servlet-class>com.project.App2</servlet-class>
+  </servlet>
+  
 </web-app>
