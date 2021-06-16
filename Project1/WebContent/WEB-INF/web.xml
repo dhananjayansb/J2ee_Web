@@ -16,6 +16,11 @@
   <servlet>
     <servlet-name>s1</servlet-name>
     <servlet-class>com.project.Application</servlet-class>
+    
+    <init-param>
+    	<param-name>email</param-name>
+    	<param-value>dhananjayansb@gmail.com</param-value>
+    </init-param>
   </servlet>
    <servlet-mapping>
     <servlet-name>s2</servlet-name>
@@ -25,5 +30,17 @@
     <servlet-name>s2</servlet-name>
     <servlet-class>com.project.App2</servlet-class>
   </servlet>
+   <servlet-mapping>
+    <servlet-name>s3</servlet-name>
+    <url-pattern>/gcall</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>s3</servlet-name>
+    <servlet-class>com.project.Gsearch</servlet-class>
+  </servlet>
   
+  <context-param>
+  	<param-name>phone</param-name>
+  	<param-value>8056772048</param-value>
+  </context-param>
 </web-app>

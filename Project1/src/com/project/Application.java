@@ -10,7 +10,15 @@ public class Application extends HttpServlet {
 		response.setContentType("text/html");
 		String name = request.getParameter("na");
 		PrintWriter out = response.getWriter();
-		out.println(name);
+		out.println("Name : "+name);
+		out.println();
+		ServletConfig config = getServletConfig();
+		String email = config.getInitParameter("email");
+		out.println("<br />Email id is :"+email);
+		ServletContext context = getServletContext();
+		String phone = context.getInitParameter("phone");
+		out.println("<br />Phone number :"+phone);
+		
 		out.println("<br>");
 		out.println("<br>");
 		out.println("<html>");
