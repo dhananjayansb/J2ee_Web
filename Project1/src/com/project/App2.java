@@ -13,7 +13,10 @@ public class App2 extends HttpServlet {
 		ServletContext context = getServletContext();
 		String phone = context.getInitParameter("phone");
 		out.println("Phone number :"+phone);
-		out.println(email);
+		out.println("Email : "+email);
+		Cookie ck[]=request.getCookies();
+		out.print("Welcome Mr. "+ck[0].getValue());
+		out.close();
 		out.println("<br>");
 		out.println("<br>");
 		out.println("<html>");

@@ -18,6 +18,8 @@ public class Application extends HttpServlet {
 		ServletContext context = getServletContext();
 		String phone = context.getInitParameter("phone");
 		out.println("<br />Phone number :"+phone);
+		Cookie ck = new Cookie("Name", name);
+		response.addCookie(ck);
 		
 		out.println("<br>");
 		out.println("<br>");
