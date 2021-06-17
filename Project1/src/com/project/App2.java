@@ -16,7 +16,8 @@ public class App2 extends HttpServlet {
 		out.println("Email : "+email);
 		Cookie ck[]=request.getCookies();
 		out.print("Welcome Mr. "+ck[0].getValue());
-		out.close();
+		HttpSession session = request.getSession(false);
+		String s = (String)session.getAttribute("email");
 		out.println("<br>");
 		out.println("<br>");
 		out.println("<html>");

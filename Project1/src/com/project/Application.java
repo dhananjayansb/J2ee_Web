@@ -21,6 +21,9 @@ public class Application extends HttpServlet {
 		Cookie ck = new Cookie("Name", name);
 		response.addCookie(ck);
 		
+		HttpSession session = request.getSession();
+		session.setAttribute("email", email);
+		
 		out.println("<br>");
 		out.println("<br>");
 		out.println("<html>");
