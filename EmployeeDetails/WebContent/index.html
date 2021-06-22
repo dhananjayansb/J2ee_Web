@@ -1,0 +1,42 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta charset="ISO-8859-1">  
+<title>Employee Form</title>  
+</head>  
+<body>  
+  
+<h1>Add New Employee</h1>  
+<form action="SaveServlet" method="post">  
+<table>  
+<tr><td>Name :</td><td><input type="text" name="name"/></td></tr>  
+<tr><td>Father Name :</td><td><input type="text" name="fathername"/></td></tr>  
+<tr><td>Email :</td><td><input type="email" name="email"/></td></tr>  
+<tr><td>Phone :</td><td><input type="number" name="phone"/></td></tr>  
+<tr><td>Designation :</td><td>  
+<select name="designation" style="width:150px">  
+<option>Full Stack Developer</option>  
+<option>Back End Developer</option>  
+<option>Front End Developer</option>  
+<option>Other</option>  
+</select>  
+</td></tr> 
+<tr><td>Salary :</td><td><input type="number" name="salary"/></td></tr>
+<tr><td>Address :</td><td><input type="text" name="address"/></td></tr> 
+<tr><td>Gender :</td><td><input type="radio" id="genderChoice1"
+     name="gender" value="male">
+    <label for="Choice1">Male</label>
+    <input type="radio" id="genderChoice2"
+     name="gender" value="female">
+    <label for="Choice2">Female</label>
+</td></tr> 
+<tr><td>Date of Birth :</td><td><input type="date" name="dob"/></td></tr>    
+<tr><td colspan="2"><input type="submit" value="Save Employee"/></td></tr>  
+</table>  
+</form>  
+  
+<br/>  
+<a href="ViewServlet">view employees</a>  
+  
+</body>  
+</html>  
